@@ -30,7 +30,7 @@ def forward_sms():
         print(f"OTP: {latest_sms}")
         
       
-        timer = threading.Timer(120, reset_otp)
+        timer = threading.Timer(45, reset_otp)
         timer.start()
     else:
         print("OTP not found")
